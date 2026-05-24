@@ -12,7 +12,7 @@ def conectar_mysql():
         user=os.getenv("MYSQL_USER"),
         password=os.getenv("MYSQL_PASSWORD"),
         database=os.getenv("MYSQL_DATABASE"),
-        port=3306
+        port=os.getenv("MYSQL_PORT")
     )
 
     return conexion
